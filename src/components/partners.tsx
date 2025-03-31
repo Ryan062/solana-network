@@ -50,12 +50,7 @@ const Partners = () => {
             alt: "opensea-logo",
             src: "https://www.datocms-assets.com/105223/1699428196-opensea-black.svg",
         },
-        {
-            id: "DmpdiFkKSgGvVC7rPPuq4A",
-            alt: "gitcoin logo",
-            src: "https://www.datocms-assets.com/105223/1725038713-gitcoin-logo-no-bg.png",
-            srcset: "/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F105223%2F1725038713-gitcoin-logo-no-bg.png&w=256&q=75 1x, /_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F105223%2F1725038713-gitcoin-logo-no-bg.png&w=384&q=75 2x",
-        },
+
         {
             id: "ahXgIIt8TJC7EL8g5YfByA",
             alt: "lido-logo",
@@ -80,11 +75,11 @@ const Partners = () => {
                     <Image
                         key={`logo-dup-${logo.id}`}
                         alt={logo.alt}
-                        fetchPriority="high"
-                        width={20}
-                        height={20}
+                        width={50}
+                        height={50}
                         src={logo.src}
-                        className="h-10 w-fit object-contain lg:max-h-16 lg:min-h-16 text-white"
+                        // className="h-10 w-fit object-contain lg:max-h-16 lg:min-h-16 text-white"
+                        className="h-10 w-full object-contain mx-5"
                     />
                 ))}
             </Marquee>
