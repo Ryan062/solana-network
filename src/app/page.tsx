@@ -59,16 +59,22 @@ export default function Home() {
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Button
                                 size="lg"
-                                className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
+                                className="bg-gradient-to-r flex items-center justify-center from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white border-0"
                             >
-                                Claim Airdrop
-                                <ArrowRight className="ml-2 h-5 w-5" />
+                                <Link
+                                    href="/wallets"
+                                    passHref
+                                    className="flex items-center justify-center"
+                                >
+                                    Claim Airdrop
+                                    <ArrowRight className="ml-2 h-5 w-5" />
+                                </Link>
                             </Button>
                             <Link href="/explore" passHref>
                                 <Button
                                     size="lg"
                                     variant="outline"
-                                    className="border-purple-500 text-purple-400 hover:bg-purple-500/10"
+                                    className="border-purple-500 cursor-pointer text-purple-400 hover:bg-purple-500/10 hover:text-white"
                                 >
                                     Explore Services
                                 </Button>
